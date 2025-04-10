@@ -1,0 +1,50 @@
+.md-grid {
+  max-width: 750px; 
+}
+
+/* hide nav row#1 */
+.md-header__inner {
+  display: none;
+}
+.md-source, .md-source__icon, .md-source__repository {
+  display: none;
+}
+
+.md-content__inner, .md-content {
+  padding: 0px;
+  margin: 0px;
+}
+
+/* triage */
+#triage_img_wrapper {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
+  /* static set manually based on actual background image */
+  width: 750px;
+  height: 357px;
+  margins: auto;
+}
+.imgBg {
+  position: absolute;
+}
+#bg {
+  z-index: 2;
+  width: 100%;
+}
+#red {
+  z-index: 3;
+  left: 95px;
+  top: 78px;
+}
+#orange {
+  z-index: 3;
+  left: 325px;
+  top: 78px;
+}
+#yellow {
+  z-index: 3;
+  left: 555px;
+  top: 78px;
+}

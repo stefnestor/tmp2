@@ -1,0 +1,55 @@
+site_name: ""
+docs_dir: docs/
+
+repo_name: 'stefnestor/tmp2'
+repo_url: 'https://github.com/stefnestor/tmp2/docs'
+site_url: 'https://stefnestor.github.io/tmp2'
+edit_uri: 'https://github.com/stefnestor/tmp2/edit/main/docs'
+
+theme:
+  favicon: "assets/elastic.png"
+  logo: "assets/elastic.png"
+  name: material
+  custom_dir: overrides
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      accent: blue
+  features:
+    - navigation.instant # auto reload without refresh during dev
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.indexes # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#section-index-pages 
+  search_index_only: false
+  include_search_page: false
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+plugins: []
+
+markdown_extensions:
+  # https://squidfunk.github.io/mkdocs-material/reference/admonitions/?h=admoni
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
+  - abbr
+  - attr_list
+  - def_list
+  - meta
+  # - md_in_html
+  - toc:
+      permalink: true
+
+extra:
+  generator: false
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - stylesheets/extra.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js

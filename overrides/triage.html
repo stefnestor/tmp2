@@ -1,0 +1,27 @@
+<!-- https://github.com/squidfunk/mkdocs-material/discussions/6185 -->
+{% extends "base.html" %}
+{% block htmltitle %}
+    <title>Triage</title>
+{% endblock %}
+
+{% block content %}
+	<!-- https://stackoverflow.com/questions/5559578/having-links-relative-to-root -->
+	<div id="triage_img_wrapper">
+		<img src="/tmp2/assets/bg.png" alt="bg" id="bg" class="imgBg">
+		<a href="/tmp2/triage/red">
+			<img src="/tmp2/assets/red.png" alt="red" id="red" class="imgBg">
+		</a>
+		<a href="/tmp2/triage/orange">
+			<img src="/tmp2/assets/orange.png" alt="orange" id="orange" class="imgBg">
+		</a>
+		<a href="/tmp2/triage/yellow">
+			<img src="/tmp2/assets/yellow.png" alt="yellow" id="yellow" class="imgBg">
+		</a>
+	</div>
+    {{ page.content }}
+    <br />
+    <br />
+    <br />
+{% endblock %}
+
+
